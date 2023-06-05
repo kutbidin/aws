@@ -1,11 +1,25 @@
 {
-    "name": "aws_app",
-    "version": "1.0.0",
-    "description": "test aws services",
-    "main": "index.js",
-    "scripts": {
-        "build": "echo \"building project\" && tsc",
-        "run": "echo \"starting project\" && node index.js",
-        "test": "echo \"starting project in debug/test mode\" && npm run index",
-    }
-}
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "commonjs",
+      "lib": ["es2020"],
+      "outDir": "dist",
+      "rootDir": "src",
+      "strict": true,
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "declaration": true,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "forceConsistentCasingInFileNames": true      
+    },
+    "references":
+     [
+        { "path": "../typescript-http-api-models" }
+     ],
+    "extends": "../tsconfig.base.json",    
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
