@@ -1,0 +1,11 @@
+{
+    "name": "aws_app",
+    "version": "1.0.0",
+    "description": "test aws services",
+    "main": "index.js",
+    "scripts": {
+        "build": "echo \"building project\" && tsc",
+        "run": "echo \"starting project\" && node index.js",
+        "test": "echo \"starting project in debug/test mode\" && npm run index",
+    }
+}
